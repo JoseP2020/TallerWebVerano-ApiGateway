@@ -1,0 +1,182 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7150/"
+  },
+  "Routes": [
+    ////////////////////  AREA COMUN  ////////////////////
+    {
+      "UpstreamPathTemplate": "/api/areaComun/",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/areaComun/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "ListAreasComunes",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    },
+    {
+      "UpstreamPathTemplate": "/api/areaComun/",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/areaComun/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "InsertAreasComunes",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    },
+    {
+      "UpstreamPathTemplate": "/api/areaComun/{id}",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamPathTemplate": "/api/areaComun/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "EditarAreasComunes",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    },
+    {
+      "UpstreamPathTemplate": "/api/areaComun/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DownstreamPathTemplate": "/api/areaComun/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "EliminarAreasComunes",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    },
+    ////////////////// TURNOS ///////////////////////////
+    {
+      "UpstreamPathTemplate": "/api/turno/",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/turno/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "ListTurnos",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    },
+    {
+      "UpstreamPathTemplate": "/api/turno/",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/turno/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "InsertTurnos",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    }
+
+    //////////////////////  SOLICITUDES  ////////////////////
+    //{
+    //  "UpstreamPathTemplate": "/api/solicitudes/list",
+    //  "UpstreamHttpMethod": [ "GET" ],
+    //  "DownstreamPathTemplate": "/api/solicitudes/list",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7209
+    //    }
+    //  ],
+    //  "Key": "ListSolicitudes"
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/api/solicitudes/create",
+    //  "UpstreamHttpMethod": [ "POST" ],
+    //  "DownstreamPathTemplate": "/api/solicitudes/create",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7209
+    //    }
+    //  ],
+    //  "Key": "InsertSolicitudes"
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/api/solicitudes/update",
+    //  "UpstreamHttpMethod": [ "PUT" ],
+    //  "DownstreamPathTemplate": "/api/solicitudes/update",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7209
+    //    }
+    //  ],
+    //  "Key": "UpdateSolicitudes"
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/api/solicitudes/",
+    //  "UpstreamHttpMethod": [ "DELETE" ],
+    //  "DownstreamPathTemplate": "/api/solicitudes/",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7209
+    //    }
+    //  ],
+    //  "Key": "DeleteSolicitudes"
+    //},
+
+    //////////////////////  LOGIN  ////////////////////
+    //{
+    //  "UpstreamPathTemplate": "/api/security/login",
+    //  "UpstreamHttpMethod": [ "POST" ],
+    //  "DownstreamPathTemplate": "/api/security/login",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7293
+    //    }
+    //  ],
+    //  "Key": "Login"
+    //},
+    //////////////////////  REGISTER  ////////////////////
+    //{
+    //  "UpstreamPathTemplate": "/api/security/register",
+    //  "UpstreamHttpMethod": [ "POST" ],
+    //  "DownstreamPathTemplate": "/api/security/register",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7293
+    //    }
+    //  ],
+    //  "Key": "Register"
+    //}
+  ]
+}
